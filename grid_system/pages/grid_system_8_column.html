@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+    <!-- <link rel="stylesheet" href="./grid_style.css"> -->
+    <link rel="stylesheet" href="../styles/grid_system.css">
+    <!-- <link rel="stylesheet" href="../styles/grid_system_media.css"> -->
+</head>
+
+<body>
+    <header>
+        <h1>Aplicando conceito de Grid System Mobile</h1>
+        <nav>
+            <input type="checkbox" name="menu" id="menu">
+            <ul>
+                <li><label for="menu">Menu </label></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="grid_system_1_column.html">1 Coluna</a></li>
+                <li><a href="grid_system_2_column.html">2 Colunas</a></li>
+                <li><a href="grid_system_3_column.html">3 Colunas</a></li>
+                <li><a href="grid_system_4_column.html">4 Colunas</a></li>
+                <li><a href="grid_system_5_column.html">5 Colunas</a></li>
+                <li><a href="grid_system_6_column.html">6 Colunas</a></li>
+                <li><a href="grid_system_7_column.html">7 a 12 Colunas</a></li>
+                <li><a href="grid_system_8_column.html">Combinações</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="content">
+            <h2>Combinações menores que doze,</h2>
+            <h2>Layout intencionalmente aberto:</h2>
+            <h3>Conteúdo centralizado com margem</h3>
+            <section class="row">
+                <div class="column column-2 shadow-box">
+                    <p>2</p>
+                </div>
+                <div class="column column-8 box">
+                    <p>8</p>
+                </div>
+                <div class="column column-2 shadow-box">
+                    <p>2</p>
+                </div>
+            </section>
+            <h3>Total = 10 → Sobra 2 colunas à direita</h3>
+            <section class="row">
+                <div class="column column-6 box">
+                    <p>6</p>
+                </div>
+                <div class="column column-4 box">
+                    <p>4</p>
+                </div>
+                                <div class="column column-2 shadow-box">
+                    <p>2</p>
+                </div>
+            </section>
+            <h3>Total = 6 → Sobra metade da linha</h3>
+            <section class="row">
+                <div class="column column-3 box">
+                    <p>3</p>
+                </div>
+                <div class="column column-3 box">
+                    <p>3</p>
+                </div>
+                                <div class="column column-6 shadow-box">
+                    <p>6</p>
+                </div>
+            </section>
+            <h3>5 → Sozinho, à esquerda</h3>
+            <section class="row">
+                <div class="column column-5 box">
+                    <p>5</p>
+                </div>
+                                <div class="column column-7 shadow-box">
+                    <p>7</p>
+                </div>
+            </section>
+            <h2>Combinações com quebra automática (soma > 12)</h2>
+            <h3>Total = 14 → Vai para a linha de baixo</h3>
+            <section class="row">
+                <div class="column column-8 box">
+                    <p>8</p>
+                </div>
+                                <div class="column column-4 shadow-box">
+                    <p>4 < 6</p>
+                </div>
+                <div class="column column-6 box">
+                    <p>6</p>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

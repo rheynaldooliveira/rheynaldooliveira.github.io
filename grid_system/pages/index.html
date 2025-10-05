@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Grid System</title>
+    <!-- <link rel="stylesheet" href="./grid_style.css"> -->
+    <link rel="stylesheet" href="../styles/grid_system.css">
+    <!-- <link rel="stylesheet" href="../styles/grid_system_media.css"> -->
+</head>
+
+<body>
+    <header>
+        <h1>Guia Prático de Grid System</h1>
+        <nav>
+            <input type="checkbox" name="menu" id="menu">
+            <ul>
+                <li><label for="menu">Menu </label></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="grid_system_1_column.html">1 Coluna</a></li>
+                <li><a href="grid_system_2_column.html">2 Colunas</a></li>
+                <li><a href="grid_system_3_column.html">3 Colunas</a></li>
+                <li><a href="grid_system_4_column.html">4 Colunas</a></li>
+                <li><a href="grid_system_5_column.html">5 Colunas</a></li>
+                <li><a href="grid_system_6_column.html">6 Colunas</a></li>
+                <li><a href="grid_system_7_column.html">7 a 12 Colunas</a></li>
+                <li><a href="grid_system_8_column.html">Combinações</a></li>
+            </ul>
+        </nav>
+    </header>
+  <main class="container">
+    <section class="content">
+      <h2>O que é um Grid System?</h2>
+      <p>
+        Um <strong>grid system</strong> é uma estrutura baseada em colunas e linhas que ajuda a organizar o conteúdo de forma consistente, alinhada e responsiva.
+        Este guia explora um sistema de <strong>12 colunas</strong> construído com <code>display: flex</code>, seguindo os princípios modernos de desenvolvimento web.
+      </p>
+    </section>
+
+    <section class="content">
+      <h2>Abordagem Mobile-First</h2>
+      <p>
+        Todos os estilos começam com o layout para dispositivos móveis (menor breakpoint). À medida que a tela aumenta, usamos
+        <code>@media (min-width: ...)</code> com unidades em <code>em</code> para adicionar melhorias — nunca para "corrigir" o mobile.
+      </p>
+      <p>
+        Isso garante desempenho, acessibilidade e uma experiência progressiva.
+      </p>
+    </section>
+
+    <section class="content">
+      <h2>Conceitos-Chave</h2>
+
+      <h3>Breakpoints em <code>em</code></h3>
+      <p>
+        Usamos <code>em</code> (ex: <code>48em = 768px</code>) porque respeitam a preferência do usuário por tamanho de fonte,
+        tornando o layout mais acessível.
+      </p>
+
+      <h3>Gutter com Padding + Margem Negativa</h3>
+      <p>
+        O <em>gutter</em> (espaço entre colunas) é criado com:
+        <ul>
+          <li class="list-content"><code>padding-left/right</code> nas colunas</li>
+          <li class="list-content"><code>margin-left/right: -half-gutter</code> na linha (<code>.row</code>)</li>
+        </ul>
+        <p>Isso mantém o alinhamento perfeito com o container.</p>
+      </p>
+
+      <h3>Box-sizing: border-box</h3>
+      <p>
+        Essencial para que padding e border façam parte da largura do elemento — evitando quebras no layout.
+      </p>
+    </section>
+
+    <section class="content">
+      <h2>Explore os Layouts</h2>
+      <p>
+        Este guia foi construído página por página, do básico ao avançado. Cada seção demonstra combinações reais de colunas,
+        incluindo layouts simétricos, assimétricos, criativos e com quebras automáticas.
+      </p>
+      <p>
+        Use o menu acima para navegar e ver o código em ação!
+      </p>
+    </section>
+
+    <footer>
+      <p>Guia criado como parte do estudo de layouts responsivos com CSS Flexbox.</p>
+    </footer>
+</body>
+
+</html>
